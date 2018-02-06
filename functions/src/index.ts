@@ -24,11 +24,12 @@ export const addToFollowing =
 
 const sendLiveMessage = (messageToken, imageName) => {
     console.log('Sending: ', messageToken, imageName);
-
+    
+    // Coloque a sua chave de autorizaçao (Authorization key) de mensagens aqui
     const args = {
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "key=AAAA2EPESg8:APA91bF8sKGOqH1O0ZbDmbpRWwAGpUCrdYxGBD_KtCpueUtnEdaLjwEXyKp7OTDYT9aYJcovOScrBEn9NCw3bfXZaTKgAE0ideW-o2yA9fF_hNXfbanIxU2nvT3eCbHV4EFKfegbyjXN"
+            "Authorization": "key=******"
         },
         data: {
             to: messageToken,
